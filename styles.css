@@ -24,6 +24,15 @@ body {
     position: relative;
 }
 
+/* Fix mobile background issue */
+@media (max-width: 768px) {
+    .hero {
+        background-attachment: scroll;
+        min-height: 100vh;
+        height: auto;
+    }
+}
+
 /* Navigation */
 .navbar {
     position: fixed;
