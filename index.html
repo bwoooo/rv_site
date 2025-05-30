@@ -38,9 +38,85 @@
                 We offer excellent service at reasonable rates and get you back on the road.</p>
             <br>
             <div class="cta-buttons">
-                <a href="#contact" class="btn btn-primary">Get Quote</a>
+                <button id="help-btn" class="btn btn-primary">How Can We Help You?</button>
                 <a href="#services" class="btn btn-secondary">Our Services</a>
             </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section" id="contact-form">
+        <div class="form-container">
+            <h2 class="form-title">How Can We Help You?</h2>
+            
+            <div class="form-success" id="form-success">
+                <h3>Thank you for contacting us!</h3>
+                <p>We've received your message and will get back to you within 24 hours.</p>
+            </div>
+
+            <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contact-form-element">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="make">Make *</label>
+                        <input type="text" id="make" name="make" placeholder="e.g. Winnebago, Jayco, Forest River" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="model">Model *</label>
+                        <input type="text" id="model" name="model" placeholder="e.g. Vista, Eagle, Cherokee" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="year">Year *</label>
+                        <input type="number" id="year" name="year" min="1950" max="2025" placeholder="e.g. 2020" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="length">Length *</label>
+                        <input type="text" id="length" name="length" placeholder="e.g. 32 ft, 28'" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="rv-type">Type of RV *</label>
+                    <select id="rv-type" name="rv-type" required>
+                        <option value="">Select RV type...</option>
+                        <option value="Motor Home">Motor Home</option>
+                        <option value="Class A">Class A</option>
+                        <option value="Class B">Class B</option>
+                        <option value="Class C">Class C</option>
+                        <option value="Trailer">Trailer</option>
+                        <option value="5th Wheel">5th Wheel</option>
+                        <option value="Van">Van</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Brief Description of the Issue *</label>
+                    <textarea id="message" name="message" placeholder="Please briefly describe the issue you're experiencing with your RV..." required></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="button" class="btn close-form" id="close-form">Close</button>
+                </div>
+            </form>
         </div>
     </section>
 
