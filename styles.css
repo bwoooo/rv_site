@@ -15,7 +15,7 @@ body {
 /* Hero Section with Background Image */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('rv.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('rv-beach.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -28,7 +28,7 @@ body {
 @media (max-width: 768px) {
     .hero {
         background-attachment: scroll;
-        min-height: 100vh;
+        min-height: 110vh;
         height: auto;
     }
 }
@@ -57,7 +57,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 90px;
 }
 
 .logo {
@@ -66,6 +66,14 @@ body {
     font-weight: bold;
     text-decoration: none;
     letter-spacing: 1px;
+    display: flex;
+    align-items: center; /* This will center the logo vertically */
+    margin-top: 10px;
+}
+
+.logo img {
+    height: 100px; /* Adjust size as needed */
+    width: auto;
 }
 
 .nav-menu {
