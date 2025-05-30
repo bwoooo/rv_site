@@ -156,6 +156,7 @@ body {
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     animation: fadeInUp 1s ease;
+    line-height: 1.1; /* Tighter line spacing */
 }
 
 .hero p {
