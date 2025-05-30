@@ -1,3 +1,16 @@
+// Ensure form is hidden on page load
+document.addEventListener('DOMContentLoaded', function() {
+    const contactFormSection = document.getElementById('contact-form');
+    const formSuccess = document.getElementById('form-success');
+    const contactForm = document.getElementById('contact-form-element');
+    
+    // Force initial state
+    contactFormSection.classList.remove('active');
+    formSuccess.style.display = 'none';
+    contactForm.style.display = 'grid';
+    contactForm.reset();
+});
+
 // Mobile menu toggle
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
